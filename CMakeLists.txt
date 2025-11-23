@@ -33,7 +33,7 @@ if(WIN32)
 
     find_package(SDL2 CONFIG REQUIRED)
     find_package(SDL2_image CONFIG REQUIRED)
-    find_package(SDL2_ttf CONFIG REQUIRED)
+#    find_package(SDL2_ttf CONFIG REQUIRED)
 #    find_package(SDL2_mixer CONFIG REQUIRED)
 #    find_package(GLEW CONFIG REQUIRED)
 #    find_package(OpenGL REQUIRED)
@@ -42,7 +42,7 @@ if(WIN32)
     target_link_libraries(${PROJECT_NAME}
 #        OpenGL32
         SDL2::SDL2
-        SDL2::SDL2main
+#        SDL2::SDL2main
         SDL2_image::SDL2_image
 #        SDL2_ttf::SDL2_ttf
 #        SDL2_mixer::SDL2_mixer
@@ -50,6 +50,7 @@ if(WIN32)
 #        assimp::assimp
     )
 
+    target_compile_definitions(${PROJECT_NAME} PRIVATE SDL_MAIN_HANDLED)
     target_compile_options(${PROJECT_NAME} PRIVATE /utf-8)
     target_link_options(${PROJECT_NAME} PRIVATE /SUBSYSTEM:CONSOLE)
 
