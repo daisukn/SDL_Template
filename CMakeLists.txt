@@ -130,7 +130,7 @@ elseif(APPLE)
     )
 
     target_link_libraries(${PROJECT_NAME}
-        OpenGL::GL
+#        OpenGL::GL
         SDL2::SDL2
         SDL2_image::SDL2_image
 #        SDL2_mixer::SDL2_mixer
