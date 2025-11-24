@@ -30,6 +30,11 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		7EDCDC902ED4E6BC0069EE3D /* doc */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = doc;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +55,7 @@
 				7EDCBD962ED355240069EE3D /* CMakeLists.txt */,
 				7EDCBD972ED355240069EE3D /* CMakePresets.json */,
 				7EDCDC542ED4E6540069EE3D /* src */,
+				7EDCDC902ED4E6BC0069EE3D /* doc */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +84,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				7EDCDC542ED4E6540069EE3D /* src */,
+				7EDCDC902ED4E6BC0069EE3D /* doc */,
 			);
 			name = SDL_Template;
 			packageProductDependencies = (

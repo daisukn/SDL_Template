@@ -60,7 +60,7 @@
     {
       "label": "CMake Build (Unix)",
       "type": "shell",
-      "command": "cmake --build build",
+      "command": "cmake --build build --parallel",
       "problemMatcher": [],
       "group": {
         "kind": "build",
@@ -71,7 +71,7 @@
     {
       "label": "CMake Build (Windows)",
       "type": "shell",
-      "command": "cmake --build build --config Debug",
+      "command": "cmake --build build --config Debug --parallel",
       "problemMatcher": [],
       "group": {
         "kind": "build",
